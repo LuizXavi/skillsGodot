@@ -11,6 +11,8 @@ Leia `project.godot`, as instruções locais e os scripts/cenas envolvidos. Iden
 
 Se existir `docs/GODOT_PROJECT_CONTEXT.md`, use-o para localizar decisões específicas do jogo. Em outro projeto, descubra o contexto novamente; não transporte nomes de autoloads nem regras econômicas do GameSurvive.
 
+Quando disponíveis, complemente apenas no domínio envolvido: `godot-2d-ui` para HUDs/menus 2D, `godot-save-system` para persistência e `godot-offline-progress` para ausência ou funcionamento sem rede. Não carregue todas as skills para uma alteração simples.
+
 ## Implementar
 
 - Preserve as convenções existentes. Separe estado de gameplay da apresentação quando a mudança exigir essa separação; não crie autoloads para dados que pertencem a uma cena.
