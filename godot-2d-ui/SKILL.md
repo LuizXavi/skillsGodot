@@ -10,6 +10,7 @@ Inspecione versão do motor, renderer, resolução-base, stretch, tema, cenas de
 ## Composição e aparência
 
 - Use Containers para layout fluido, anchors/offsets para posicionamento relativo simples. Não dispute posição/tamanho de filhos gerenciados por Container; ajuste size flags, mínimos e espaçamentos do layout.
+- Escolha MarginContainer para margens, VBoxContainer/HBoxContainer para fluxos, GridContainer para grades, ScrollContainer para overflow e TabContainer para páginas. Para touch, avalie tamanho e espaçamento dos alvos e rolagem com dedo no dispositivo; hover não pode ser a única forma de obter informação.
 - Centralize tipografia, cores, margens e StyleBoxes compartilhados em Theme. Prefira variações de tipo e componentes reutilizáveis a overrides repetidos. Diferencie recursos compartilhados de cópias por instância antes de mudar um tema em runtime.
 - Separe HUD fixo da câmera do mundo quando necessário (por exemplo, CanvasLayer). Mostre alterações do estado do jogo por sinais ou atualização direcionada; a UI não deve manter outra cópia autoritativa de inventário ou economia.
 - Planeje o texto mais longo e os maiores valores esperados; use quebra, tamanho mínimo, scroll ou abreviação explícita. Não resolva tudo encolhendo a fonte. Estados importantes devem ter texto/ícone além de cor.
